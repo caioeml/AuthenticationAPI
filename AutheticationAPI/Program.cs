@@ -29,7 +29,7 @@ app.UseSwagger();
 app.UseSwaggerUI();
 app.MapSwagger();   
 
-app.MapGet("/", () => "Hello World!").RequireAuthorization(); ;
+app.MapGet("/", () => "Hello World!");
 app.MapIdentityApi<User>();
 
 app.Run();
